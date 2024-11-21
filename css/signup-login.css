@@ -1,0 +1,20 @@
+/* Color Palette */
+:root {
+    --brown-chocolate--: #620e2c;
+    --dark-chocolate--: #3f0a29;
+    --twilight-lavender--: #94426a;
+    --middle-purple--: #db90be;
+    --spanish-pink--: #f5bcc1;
+}
+
+
+.wrapper{
+    background-color: var(--middle-purple--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-image:url('../images/celestial-bg.jpg'); */
+}

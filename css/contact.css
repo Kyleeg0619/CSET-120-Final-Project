@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Color Palette */
+:root {
+    --brown-chocolate--: #620e2c;
+    --dark-chocolate--: #3f0a29;
+    --twilight-lavender--: #94426a;
+    --middle-purple--: #db90be;
+    --spanish-pink--: #f5bcc1;
+}
+
+
+body{
+    background-image: url('../images/moon\ phases.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;  
+                
+}
+
+#contact {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    text-align: center;
+    height: 90vh;
+    
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d8b3c5;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(52, 31, 39, 0.6);
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    color:black;
+    opacity:0.6;
+  }
+  
+  #contact-form label { /*headings above each input*/
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: rgb(245, 244, 244);
+  }
+  
+  #contact-form input, /*text inside inputs*/
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color:black;
+  }
+  
+  #contact-form button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, var(--twilight-lavender--), var(--dark-chocolate--));
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #9e627f;
+  }
+  
+  #form-status {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  /* Footer */
+

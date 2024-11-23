@@ -8,9 +8,10 @@
 }
 /* Header */
 header{
-    background: url(../images/menu-header.jpg);
+    background: url(../images/menu-header.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
 }
 /* Main */

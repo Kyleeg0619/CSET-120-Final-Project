@@ -1,35 +1,53 @@
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form submission
-  
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const formStatus = document.getElementById('form-status');
-  
-    // Validation for contact form 
-    if (!name) {
-      formStatus.textContent = 'Please enter your name.';
-      formStatus.style.color = 'red';
-      return;
-    }
-  
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      formStatus.textContent = 'Please enter a valid email address.';
-      formStatus.style.color = 'red';
-      return;
-    }
-  
-    if (!message) {
-      formStatus.textContent = 'Please enter your message.';
-      formStatus.style.color = 'red';
-      return;
-    }
-  
-    // form submission
-    formStatus.textContent = 'Thank you! Your message has been sent.';
-    formStatus.style.color = 'green';
-  
-    // Clear form fields so you can resubmit the form.
-    document.getElementById('contact-form').reset();
-  });
-  
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
+
+  // Declare variables to store input data
+  let feedbackName = "";
+  let feedbackEmail = "";
+  let feedbackMessage = "";
+
+  form.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent actual form submission
+
+  // Assign input values to variables
+  feedbackName = document.getElementById("name").value.trim();
+  feedbackEmail = document.getElementById("email").value.trim();
+  feedbackMessage = document.getElementById("message").value.trim();
+
+  if (feedbackName && feedbackEmail && feedbackMessage) {
+    console.log("Feedback Data:");
+    console.log("Name:", feedbackName);
+    console.log("Email:", feedbackEmail);
+    console.log("Message:", feedbackMessage);
+
+    form.reset(); // Clear the form
+    formMessage.classList.remove("hidden"); // Show the success message
+
+    // Optionally hide the success message after a few seconds
+    setTimeout(() => {
+        formMessage.classList.add("hidden");
+    }, 3000);
+} else {
+    alert("Please fill out all fields before submitting.");
+}
+});
+});
+
+  // Simulate form submission logic
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+      if (name && email && message) {
+          form.reset(); // Clear the form
+          formMessage.classList.remove("hidden"); // Show the success message
+
+          // Optionally hide the success message after a few seconds
+          setTimeout(() => {
+              formMessage.classList.add("hidden");
+          }, 3000);
+      }
+
+

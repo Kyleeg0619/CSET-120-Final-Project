@@ -11,42 +11,54 @@
     <link rel="stylesheet" href="https://use.typekit.net/eod1kak.css">
 </head>
 <body>
-    <div class="wrapper">
-    <nav>
-        <ul class="nav-list">
-            <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
-            <li class="nav-item"><a href="index.html" class="nav-links">Home</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
-        </ul>
-        <div class="nav-login-signin">
-            <a href="#" class="sign-up nav-item">Signup</a>
-            <span class="diamond">&#9670;</span>
-            <a href="#" class="login nav-item">Login</a>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
+        <nav>
+            <ul class="nav-list">
+                <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
+                <li class="nav-item"><a href="index.html" class="nav-links">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
+            </ul>
+            <div class="nav-login-signin">
+                <a href="signup-login.html" class="sign-up nav-item">Signup</a>
+                <span class="diamond">&#9670;</span>
+                <a href="#" class="login nav-item">Login</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 
-    <main id="contact">
-       <h2> Contact Us!</h2> 
-        <form id="contact-form">
-          <label for="name">Name:</label>
-            <input type= "text" id="name" name="name" placeholder="Your Name" required></input>
-
-          <label for="email">Email:</label>
-            <input type= "email" id="email" name="email" placeholder="Your Email" required></input>
-
-          <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message/Feedback" required></textarea>
-
-          <button type="submit">Send</button>
-        </form> 
-        <div id="form-status"></div>
-    </main>
+        <header>
+            <h1>About Bloom and Brew</h1>
+            <img src="images/moon-phases.png" alt="">
+        </header>
+        
+ 
+        <section class="contact-us">
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                    <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="formMessage" class="hidden">Thank you for reaching out! We will get back to you soon.</p>
+            </div>
+    
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h3>Call Us</h3>
+                <p>+1 (234) 567-891</p>
+                <h3>Location</h3>
+                <p>121 Moon Street, Salem, Massachusetts 01915</p>
+                <h3>Business Hours</h3>
+                <p>Mon - Fri: 8 am - 3 pm<br>Sat: 10am- 3pm; <br>  Sun: Closed</p>
+            </div>
+        </section>
 
     <footer>
         <div class="footer-sign-up">
@@ -59,7 +71,7 @@
             <a href="menu.html" class="footer-links"><span class="diamond">&#9670;</span>Menu</a>
             <a href="contact.html" class="footer-links"><span class="diamond">&#9670;</span>Contact</a></div>
     </footer>
-    </div>
+    
     <script src="scripts/nav.js"></script>
     <script src="scripts/contact.js"></script>
 

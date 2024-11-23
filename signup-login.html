@@ -13,7 +13,7 @@
 <body>
     <nav>
         <ul class="nav-list">
-            <!-- <img src="images/logo.PNG" alt="" width="100px" class="nav-item"> -->
+            <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
             <li class="nav-item"><a href="index.html" class="nav-links">Home</a></li>
             <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
@@ -29,28 +29,67 @@
             <span class="bar"></span>
         </div>
     </nav>
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username">
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="Password">
-            </div>
-            <div class="remeber-forgot">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">forgot password</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
+    <section>
+        <div class="container" id="container">
+            <div class="form-container sign-in-container">
 
-            <div class="register-link">
-                <p>Don't have an account?
-                    <a href="#">Register </a>
-                </p>
+                <div class="wrapper">
+
+                    <form action="#">
+                        <h1>Log in</h1>
+                        <div class="input-box">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">forgot password</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+
+                        <div class="register-link">
+                            <p>Don't have an account?
+                                <a href="#"class="ghost" id="signUp">Register </a>
+                                <!-- <button >Sign Up</button> -->
+                            </p>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
-    </div>
+            <div class="form-container sign-up-container" id="signupForm">
+
+                <div class="wrapper">
+
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <div class="input-box">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Username">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <!-- <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">forgot password</a>
+                        </div> -->
+                        <button type="submit" class="btn">Sign Up</button>
+
+                        <div class="register-link">
+                            <p>Have an account?
+                                <a href="#" class="ghost" id="signIn">Login here </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
     <main></main>
     
     <footer>
@@ -65,5 +104,6 @@
             <a href="contact.html" class="footer-links"><span class="diamond">&#9670;</span>Contact</a></div>
     </footer>
     <script src="scripts/nav.js"></script>
+    <script src="scripts/signup-login.js"></script>
 </body>
 </html>

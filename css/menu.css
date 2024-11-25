@@ -1,0 +1,65 @@
+/* Color Palette */
+:root {
+    --brown-chocolate--: #620e2c;
+    --dark-chocolate--: #3f0a29;
+    --twilight-lavender--: #94426a;
+    --middle-purple--: #db90be;
+    --spanish-pink--: #f5bcc1;
+}
+/* Header */
+header{
+    background: url(../images/menu-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+/* Main */
+p, h4{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.menu-section h4 {
+    color: var(--dark-chocolate--);
+}
+
+p{
+    color: var(--twilight-lavender--);
+}
+/* Menu Image */
+.menu-img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+/* Links */
+a{
+    font-family: inherit;
+    color: var(--spanish-pink--);
+    text-decoration: none;
+}
+/* Order Section */
+.order-section{
+    display: block;
+    width: max-content;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 50px;
+    background: var(--twilight-lavender--);
+    color: var(--spanish-pink--);
+    font-size: 2rem;
+    margin: 10px auto;
+    text-decoration: none;
+}
+
+.menu-spacer {
+    width: 70%;
+    margin: 25px auto;
+}
+
+@media screen and (max-width:768px) {
+    .menu-img {
+        width: 100%;
+    }
+}

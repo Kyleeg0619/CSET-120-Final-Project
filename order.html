@@ -36,16 +36,156 @@
         <section class="order-section">
             <h4>Order Now!</h4>
             <p>Choose from our pre-made options</p>
-
             <section class="pre-options">
-                <div class="p-option"></div>
-                <div class="p-option"></div>
-                <div class="p-option"></div>
+                <div class="p-option">
+                        <h3>Coffee</h3>
+                        <ul>
+                            <li><input type="checkbox"> Sunrise Ritual - $5</li>
+                            <li><input type="checkbox"> Moonlit Elixir - $5</li>
+                            <li><input type="checkbox"> Midnight Brew - $5</li>
+                            <li><input type="checkbox"> Sunset Latte - $6</li>
+                            <li><input type="checkbox"> Witch's Brew - $5</li>
+                            <li><input type="checkbox"> Dark Arts Espresso - $6</li>
+                        </ul> 
+                </div>
+                <div class="p-option">
+                    <h3>Teas & Other Drinks</h3>
+                        <ul>
+                            <li><input type="checkbox"> Starry Night Cocoa - $4</li>
+                            <li><input type="checkbox"> Cinnamon Spell - $6</li>
+                            <li><input type="checkbox"> Potion of The Forest - $6</li>
+                            <li><input type="checkbox"> Moonbeam Tea - $4</li>
+                            <li><input type="checkbox"> Witch's Orchard - $6</li>
+                            <li><input type="checkbox"> Starlight Pearls - $6</li>
+                            <li><input type="checkbox"> Lavender Moon - $6</li>
+
+                        </ul>
+                </div>
+                <div class="p-option">     
+                    <h3>Pastries & Food</h3>
+                    <ul>
+                        <li><input type="checkbox">The Witch's Spiral - $4</li>
+                        <li><input type="checkbox">Spellbound Muffins - $5</li>
+                        <li><input type="checkbox">Herbal Spell Toast - $7</li>
+                        <li><input type="checkbox">Enchanted Moon Cookies - $3</li>
+                        <li><input type="checkbox">Mystic Herb & Veggie Wrap - $7</li>
+                        <li><input type="checkbox">Potion of Prosperity Soup - $5</li>
+                        <li><input type="checkbox">Celestial Stack - $7</li>
+                    </ul>
+                </div>
             </section>
 
-            <h4>Or, create your own!</h4>
-
-            <section class="custom-options"></section>
+            <h4>Create your Own!</h4>
+            <section class="pre-options">
+                <section class="custom-options">
+                    <div class="p-option">     
+                        <h3>Drink bases</h3>
+                            <div class="dropdown">
+                                <input id="base" type="checkbox" checked>
+                                <label for="base">Milks</label><br>
+                                <ul>    
+                                    <li>Whole Milk</li>
+                                    <li>Fat-Free Milk</li>
+                                    <li>Oat Milk</li>
+                                    <li>Almond Milk</li>
+                                    <li>Soy Milk</li>
+                                </ul>
+                            </div>
+                        <br>
+                        <ul>
+                            <li><input type="checkbox">Water</li>
+                            <li><input type="checkbox">Lemonade</li>
+                            <li><input type="checkbox">Matcha</li>
+                            <li><input type="checkbox">Chai</li>
+                            <li><input type="checkbox">Espresso</li>
+                            <li><input type="checkbox">Coffee</li>
+                        </ul>
+                    </div>
+                    <div class="p-option">     
+                        <h3>Flavors</h3>
+                        <label for="flavors">Syrups</label><br>
+                        <select name="flavors" id="flavors">
+                            <option value="lavender">Lavender</option>
+                            <option value="Vanilla">Vanilla</option>
+                            <option value="Taro">Taro</option>
+                            <option value="Marshmallow">Marshmallow</option>
+                            <option value="Mocha">Mocha</option>
+                            <option value="Ginger">Ginger</option>
+                            <option value="Cinnamon">Cinnamon</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <br>
+                        <label for="flavors">Fruit Syrups</label><br>
+                        <select name="flavors" id="flavors">
+                            <option value="apple">Apple</option>
+                            <option value="Strawberry">Strawberry</option>
+                            <option value="Mango">Mango</option>
+                            <option value="passionfruit">Passionfruit</option>
+                            <option value="Blueberry">Blueberry</option>
+                        </select>
+                        <br>
+                        <label for="flavors">Seasonal Flavors</label><br>
+                        <select name="flavors" id="flavors">
+                            <option value="pumpkin">Pumpkin</option>
+                            <option value="clove">Clove</option>
+                            <option value="eggnog">Eggnog</option>
+                            <option value="gingerbread">Gingerbread</option>
+                        </select>
+                    </div>
+                    <div class="p-option">     
+                        <h3>Drink Add-ons</h3>
+                        <ul>
+                            <li><input type="checkbox">Sugar/ Syrups</li>
+                            <li><input type="checkbox">Honey</li>
+                            <li><input type="checkbox">Whipped Cream </li>
+                            <li><input type="checkbox">Extra Shot of Espresso</li>
+                            <li><input type="checkbox">Drizzles</li>
+                            <li><input type="checkbox">Cold Foam</li>
+                            <li>Boba</li>
+                            <select name="boba" id="boba">
+                                <option value="boba">Milk Tea</option>
+                                <option value="boba">Crystal Boba</option>
+                                <option value="boba">Green Tea</option>
+                                <option value="boba">Brown Sugar</option>
+                            </select>
+                            <li>Popping Boba</li>
+                            <select name="poppboba" id="popboba">
+                                <option value="popboba">Strawberry</option>
+                                <option value="popboba">Mango</option>
+                                <option value="popboba">Lychee</option>
+                                <option value="popboba">Passion Fruit</option>
+                                <option value="popboba">Cherry</option>
+                                <option value="popboba">Cranberry</option>
+                            </select>
+                            <h3>Food Add-ons</h3>
+                            <li>Spreads</li>
+                            <select name="spreads" id="spreads">
+                                <option>Pesto</option>
+                                <option>Butter</option>
+                                <option>Cream Cheese</option>
+                                <option>Hummus</option>
+                                <option>Peanut Butter</option>
+                            </select>
+                            <li>Breads</li>
+                            <select name="breads" id="breads">
+                                <option>Sourdough</option>
+                                <option>White</option>
+                                <option>Whole Wheat</option>
+                                <option>Rye</option>
+                                <option>Pumpernickel</option>
+                                <option>Brioche</option>
+                            </select>
+                            <li><input type="checkbox">Bacon</li>
+                            <li><input type="checkbox">Egg</li>
+                            <li><input type="checkbox">Extra Cheese</li>
+                            <li><input type="checkbox">Choice of Side - Salad, Soup, Bread</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <input type="submit">
+             <!-- ADD AN ONCLICK EVENT - onclick="orderFinish(event)" -->
         </section>
     </main>
 

@@ -118,6 +118,84 @@ header img {
 .contact-info p {
   margin: 0 0 15px 0;
 }
+
+/*Blockquote employees*/
+.h2-other{
+  display:block;
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  text-shadow: 2px 2px 2px darkslateblue;
+  line-height: 4.5;
+  font-size: 40px;
+}
+.quotes {
+  background-image: url("../images/whimsical.jpg");
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+blockquote{
+  text-indent:50px;
+}
+.quotes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.quote {
+  max-width: 90%;
+  text-align: left;
+  padding-bottom: 80px;
+  flex: 1 1 calc(100% - 40px);
+  box-sizing: border-box;
+}
+
+.quotes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+blockquote {
+  line-height: 145%;
+  margin-top: 40px;
+  position: relative;
+  padding:2%;
+}
+
+blockquote::before {
+  content: '\201C';
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+
+.employee-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.name {
+  color: white;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -150,6 +228,18 @@ footer {
       max-width: 100%;
       margin: 0 auto;
   }
+  .quotes {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.blockquote, .quote, .quotes-grid {
+    width: 200px;
+   flex-direction: column;
+   text-align: center;
+}
 }
 
 @media (max-width: 768px) {
@@ -162,5 +252,6 @@ footer {
   .contact-form, .contact-info {
       width: 100%;
       max-width: 400px;
+      ;
   }
 }

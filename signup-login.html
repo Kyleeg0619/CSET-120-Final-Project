@@ -38,21 +38,16 @@
                     <form action="#">
                         <h1>Log in</h1>
                         <div class="input-box">
-                            <input type="text" placeholder="Username">
+                            <input type="text" placeholder="Username" id="userName" required>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Password" id="userPw" required>
                         </div>
-                        <div class="remember-forgot">
-                            <label><input type="checkbox">Remember me</label>
-                            <a href="#">forgot password</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn" id="logIn_btn" onclick="check()">Login</button>
 
                         <div class="register-link">
                             <p>Don't have an account?
                                 <a href="#"class="ghost" id="signUp">Register </a>
-                                <!-- <button >Sign Up</button> -->
                             </p>
                         </div>
                     </form>
@@ -65,19 +60,13 @@
                     <form action="#">
                         <h1>Create Account</h1>
                         <div class="input-box">
-                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Username" id="name" required>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Username">
+                            <input type="password" placeholder="Password" id="pw" required>
                         </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password">
-                        </div>
-                        <!-- <div class="remember-forgot">
-                            <label><input type="checkbox">Remember me</label>
-                            <a href="#">forgot password</a>
-                        </div> -->
-                        <button type="submit" class="btn">Sign Up</button>
+
+                        <button type="submit" class="btn"  value="Register" onclick="store()">Sign Up</button>
 
                         <div class="register-link">
                             <p>Have an account?
@@ -87,10 +76,8 @@
                     </form>
                 </div>
             </div>
-            
         </div>
     </section>
-    <main></main>
     
     <footer>
         <div class="footer-sign-up">

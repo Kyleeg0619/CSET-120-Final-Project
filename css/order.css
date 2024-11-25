@@ -15,25 +15,26 @@ header{
     background-position: center;
     height: 300px;
 }
-
+body{
+    background: linear-gradient(to left, #3f0a29, #3f0a29, #94426a);
+}
 /* Order Section */
 .order-section{
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
+    justify-content: space-between;
     text-align: center;
 }
 .order-section h4{
-    color: var(--dark-chocolate--);
+    color: var(--middle-purple--);
 }
 .order-section p{
     color: var(--twilight-lavender--);
 }
-/* Pre-made Options */
-.pre-options{ 
+/* Options */
+.pre-options, .custom-options{ 
     display: flex;
     width: 100%;
-    height: 400px;
-    background-color: var(--dark-chocolate--);
 }
 .p-option{ 
     width: 300px;
@@ -46,6 +47,42 @@ header{
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
+    min-height: fit-content;
 }
-
-/* Custom Options */
+.p-option h3{
+    color: var(--middle-purple--);
+}
+li{
+    list-style: none;
+    color: #f5bcc1;
+}
+label{
+    color: var(--spanish-pink--);
+}
+/* Dropdown Menus */
+.dropdown{
+    width: 200px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.dropdown ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.dropdown li{
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+}
+/* Mobile Viewport */
+@media screen and (max-width:768px) {
+    .pre-options {
+        flex-direction: column;
+    }
+}

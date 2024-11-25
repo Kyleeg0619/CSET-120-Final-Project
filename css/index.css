@@ -69,6 +69,72 @@ header {
     margin: 0 auto 15px auto;
 }
 
+/* Landing Page Styles */
+#landing header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    background: none;
+}
+
+#landing main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-img {
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 390px);
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+}
+
+.cg-lay {
+    position: absolute;
+    width: 1900px;
+    top: calc(50% - 150px);
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+}
+
+.star1-lay {
+    position: absolute;
+    width: 1650px;
+    top: calc(50% - 150px);
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+}
+
+.star2-lay {
+    position: absolute;
+    width: 1650px;
+    top: calc(50% - 150px);
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+}
+
+.lc-lay {
+    position: absolute;
+    width: 1900px;
+    top: calc(50% - 150px);
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+}
+
+.comet-lay {
+    position: absolute;
+    width: 1780px;
+    top: calc(50% - 150px);
+    left: calc(50%);
+    transform: translate(-50%,-50%);
+}
+
 /* ---Mobile Viewport--- */
 @media screen and (max-width:768px) {
     .intro-block {

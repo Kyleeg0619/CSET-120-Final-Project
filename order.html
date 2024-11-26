@@ -75,11 +75,11 @@
                 </div>
             </section>
 
-            <h4>Create your Own!</h4>
+            <h4>Create your Own! - Starting from $5.00</h4>
             <section class="pre-options">
                 <section class="custom-options">
                     <div class="p-option">     
-                        <h3>Drink bases</h3>
+                        <h3>Drink Bases</h3>
                             <div class="dropdown">
                                 <input id="base" type="checkbox" checked>
                                 <label for="base">Milks</label><br>
@@ -103,35 +103,43 @@
                     </div>
                     <div class="p-option">     
                         <h3>Flavors</h3>
-                        <label for="flavors">Syrups</label><br>
-                        <select name="flavors" id="flavors">
-                            <option value="lavender">Lavender</option>
-                            <option value="Vanilla">Vanilla</option>
-                            <option value="Taro">Taro</option>
-                            <option value="Marshmallow">Marshmallow</option>
-                            <option value="Mocha">Mocha</option>
-                            <option value="Ginger">Ginger</option>
-                            <option value="Cinnamon">Cinnamon</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
+                        <div class="dropdown">
+                            <input id="syrups" type="checkbox">
+                            <label for="syrups">Syrups - $0.25</label>
+                            <ul>
+                                <li>Lavender</li>
+                                <li>Vanilla</li>
+                                <li>Taro</li>
+                                <li>Milk Chocolate</li>
+                                <li>Dark Chocolate</li>
+                                <li>Marshmallow</li>
+                                <li>Mocha</li>
+                                <li>Ginger</li>
+                                <li>Cinnamon</li>
+                            </ul>
+                        </div>
                         <br>
-                        <label for="flavors">Fruit Syrups</label><br>
-                        <select name="flavors" id="flavors">
-                            <option value="apple">Apple</option>
-                            <option value="Strawberry">Strawberry</option>
-                            <option value="Mango">Mango</option>
-                            <option value="passionfruit">Passionfruit</option>
-                            <option value="Blueberry">Blueberry</option>
-                        </select>
-                        <br>
-                        <label for="flavors">Seasonal Flavors</label><br>
-                        <select name="flavors" id="flavors">
-                            <option value="pumpkin">Pumpkin</option>
-                            <option value="clove">Clove</option>
-                            <option value="eggnog">Eggnog</option>
-                            <option value="gingerbread">Gingerbread</option>
-                        </select>
+                        <div class="dropdown">
+                            <input id="fruit-syrups" type="checkbox">
+                            <label for="fruit-syrups">Fruit Syrups - $0.30</label>
+                            <ul>
+                                <li>Apple</li>
+                                <li>Strawberry</li>
+                                <li>Mango</li>
+                                <li>Passion Fruit</li>
+                                <li>Blueberry</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <input id="seasonal-flavors" type="checkbox">
+                            <label for="seasonal-flavors">Seasonal Flavors</label>
+                            <ul>
+                                <li>Pumpkin</li>
+                                <li>Clove</li>
+                                <li>Eggnog</li>
+                                <li>Gingerbread</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="p-option">     
                         <h3>Drink Add-ons</h3>
@@ -142,44 +150,60 @@
                             <li><input type="checkbox">Extra Shot of Espresso</li>
                             <li><input type="checkbox">Drizzles</li>
                             <li><input type="checkbox">Cold Foam</li>
-                            <li>Boba</li>
-                            <select name="boba" id="boba">
-                                <option value="boba">Milk Tea</option>
-                                <option value="boba">Crystal Boba</option>
-                                <option value="boba">Green Tea</option>
-                                <option value="boba">Brown Sugar</option>
-                            </select>
-                            <li>Popping Boba</li>
-                            <select name="poppboba" id="popboba">
-                                <option value="popboba">Strawberry</option>
-                                <option value="popboba">Mango</option>
-                                <option value="popboba">Lychee</option>
-                                <option value="popboba">Passion Fruit</option>
-                                <option value="popboba">Cherry</option>
-                                <option value="popboba">Cranberry</option>
-                            </select>
-                            <h3>Food Add-ons</h3>
-                            <li>Spreads</li>
-                            <select name="spreads" id="spreads">
-                                <option>Pesto</option>
-                                <option>Butter</option>
-                                <option>Cream Cheese</option>
-                                <option>Hummus</option>
-                                <option>Peanut Butter</option>
-                            </select>
-                            <li>Breads</li>
-                            <select name="breads" id="breads">
-                                <option>Sourdough</option>
-                                <option>White</option>
-                                <option>Whole Wheat</option>
-                                <option>Rye</option>
-                                <option>Pumpernickel</option>
-                                <option>Brioche</option>
-                            </select>
-                            <li><input type="checkbox">Bacon</li>
-                            <li><input type="checkbox">Egg</li>
-                            <li><input type="checkbox">Extra Cheese</li>
-                            <li><input type="checkbox">Choice of Side - Salad, Soup, Bread</li>
+                            <div class="dropdown">
+                                <input id="boba" type="checkbox">
+                                <label for="boba">Boba - $1.75</label>
+                                <ul>
+                                    <li>Milk Tea</li>
+                                    <li>Green Tea</li>
+                                    <li>Brown Sugar</li>
+                                    <li>Crystal Boba</li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <input id="popboba" type="checkbox">
+                                <label for="popboba">Popboba - $1.75</label>
+                                <ul>
+                                    <li>Strawberry</li>
+                                    <li>Mango</li>
+                                    <li>Lychee</li>
+                                    <li>Passion Fruit</li>
+                                    <li>Cherry</li>
+                                    <li>Cranberry</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="p-option">
+                        <h3>Food Add-ons</h3>
+                            <div class="dropdown">
+                                <input id="spreads" type="checkbox">
+                                <label for="spreads">Spreads - $0.25</label>
+                                <ul>
+                                    <li>Pesto</li>
+                                    <li>Butter</li>
+                                    <li>Honey Butter</li>
+                                    <li>Cream Cheese</li>
+                                    <li>Hummus</li>
+                                    <li>Peanut Butter</li>
+                                    <li>Avocado</li>
+                                </ul>
+                            </div> 
+                            <div class="dropdown">
+                                <input id="bread" type="checkbox">
+                                <label for="bread">Breads - $0.75</label>
+                                <ul>
+                                    <li>Sourdough</li>
+                                    <li>White</li>
+                                    <li>Whole Wheat</li>
+                                    <li>Rye</li>
+                                    <li>Pumpernickel</li>
+                                    <li>Brioche</li>
+                                </ul>
+                            </div> 
+                            <li><input type="checkbox">Bacon - $1</li>
+                            <li><input type="checkbox">Egg - $1</li>
+                            <li><input type="checkbox">Extra Cheese - $0.50</li>
+                            <li><input type="checkbox">Choice of Side: Salad, Soup, Bread - $2.50</li>
                         </ul>
                     </div>
                 </section>
@@ -202,5 +226,6 @@
     </footer>
     
     <script src="scripts/nav.js"></script>
+    <script src="scripts/order.js"></script>
 </body>
 </html>

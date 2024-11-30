@@ -1,128 +1,104 @@
 /* Color Palette */
 :root {
-    --brown-chocolate--: #620e2c;
-    --dark-chocolate--: #3f0a29;
-    --twilight-lavender--: #94426a;
-    --middle-purple--: #db90be;
-    --spanish-pink--: #f5bcc1;
-    /* background pic */
-    --licorice--: #200B18;
-    --raisin-black--: #2C1724;
+  --brown-chocolate--: #620e2c;
+  --dark-chocolate--: #3f0a29;
+  --twilight-lavender--: #94426a;
+  --middle-purple--: #db90be;
+  --spanish-pink--: #f5bcc1;
+  /* background pic */
+  --licorice--: #200b18;
+  --raisin-black--: #2c1724;
 }
 
 /* Header */
-header{
-    background: url(../images/order-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
-    border-bottom: #94426a;
+header {
+  background: url(../images/order-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  border-bottom: #94426a;
 }
-body{
-   background: url(../images/order-bg.png);
+body {
+  background: url(../images/order-bg.png);
 }
 /* Order Section */
-.order-section{
-    width: 100%;
-    padding: 20px 0;
-    justify-content: space-between;
-    text-align: center;
+.order-section {
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-between;
+  text-align: center;
 }
-.order-section h4{
-    color: var(--middle-purple--);
+.order-section h4 {
+  color: var(--middle-purple--);
 }
-.order-section p{
-    color: var(--twilight-lavender--);
+.order-section p {
+  color: var(--twilight-lavender--);
 }
 /* Options */
-.pre-options, .custom-options{
-    display: flex;
-    width: 100%;
+.pre-options,
+.custom-options {
+  display: flex;
+  width: 100%;
 }
 .p-option {
-    width: 300px;
-    border-style: solid;
-    border-color: #4e2f3e;
-    border-width: 4px 0px 0px 4px;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    min-height: fit-content;
-    backdrop-filter: blur(10px);
+  width: 300px;
+  border-style: solid;
+  border-color: #4e2f3e;
+  border-width: 4px 0px 0px 4px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  min-height: fit-content;
+  backdrop-filter: blur(10px);
 }
-.p-option h3{
-    color: var(--middle-purple--);
+.p-option h3 {
+  color: var(--middle-purple--);
 }
-li{
-    list-style: none;
-    color: #f5bcc1;
+li {
+  list-style: none;
+  color: #f5bcc1;
 }
-label{
-    color: var(--spanish-pink--);
+label {
+  color: var(--spanish-pink--);
 }
-/* Dropdown Menus */
-.dropdown{
-    position: relative;
-    display: inline-block;
-    width: 200px;
+
+/* Review & Submit Buttons */
+#reviewOrder {
+  display: block;
+  width: max-content;
+  padding: 15px 20px;
+  border: 1px solid var(--spanish-pink--);
+  border-radius: 30px;
+  background: none;
+  color: var(--spanish-pink--);
+  font-size: 2rem;
+  margin: 15px auto;
+  text-decoration: none;
 }
-.dropdown > input{
-    display: none; /* hides checkbox */
+
+#submitOrder {
+  display: none;
+  width: max-content;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  background: var(--twilight-lavender--);
+  color: var(--spanish-pink--);
+  font-size: 2rem;
+  margin: 15px auto;
+  text-decoration: none;
 }
-.dropdown > label{
-    display: block;
-    padding: 10px;
-    background-color:  var(--raisin-black--);
-    color: #db90be;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #4e2f3e;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.dropdown > label:hover{
-    background-color: #4e2f3e;
-}
-.dropdown ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 100%;
-    display: none;
-    z-index: 100;
-    background-color: #4e2f3e;
-    border-radius: 5px;
-    border-color: #2C1724;
-}
-.dropdown > ul{
-    display: none;
-}
-.dropdown > ul.visible{
-    display: block;
-}
-.dropdown > ul > li{
-    padding: 10px;
-    color: #db90be;
-    font-size: 15px;
-    transition: var(--brown-chocolate-- 0.5s ease);
-    cursor: pointer;
-}
-.dropdown > ul > li:hover{
-    background-color: #94426a;
-    color: #db90be;
-}
-.dropdown > input:checked ~ ul{
-    display: block;
-}
+
 /* Mobile Viewport */
-@media screen and (max-width:768px) {
-    .pre-options {
-        flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
+  .pre-options {
+    flex-direction: column;
+  }
+  .custom-options {
+    flex-direction: column;
+  }
 }

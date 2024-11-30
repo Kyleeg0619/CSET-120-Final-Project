@@ -90,7 +90,7 @@ header {
 .bg-img {
     position: absolute;
     width: 2800px;
-    top: calc(50% - 390px);
+    top: calc(50% - 350px);
     left: calc(50% + 10px);
     transform: translate(-50%,-50%);
 }
@@ -98,41 +98,75 @@ header {
 .cg-lay {
     position: absolute;
     width: 1900px;
-    top: calc(50% - 150px);
+    top: calc(50% - 210px);
     left: calc(50% + 10px);
     transform: translate(-50%,-50%);
 }
 
 .star1-lay {
     position: absolute;
-    width: 1650px;
-    top: calc(50% - 150px);
-    left: calc(50% + 10px);
+    width: 2000px;
+    top: calc(50% - 350px);
+    left: calc(50% - 80px);
     transform: translate(-50%,-50%);
 }
 
 .star2-lay {
     position: absolute;
-    width: 1650px;
-    top: calc(50% - 150px);
-    left: calc(50% + 10px);
+    width: 2500px;
+    top: calc(50% - 350px);
+    left: calc(50% - 50px);
     transform: translate(-50%,-50%);
 }
 
 .lc-lay {
     position: absolute;
     width: 1900px;
-    top: calc(50% - 150px);
+    top: calc(50% - 210px);
     left: calc(50% + 10px);
     transform: translate(-50%,-50%);
 }
 
 .comet-lay {
     position: absolute;
-    width: 1780px;
-    top: calc(50% - 150px);
+    width: 1980px;
+    top: calc(50% - 350px);
     left: calc(50%);
     transform: translate(-50%,-50%);
+}
+
+.cloud-lay {
+    position: absolute;
+    width: 2100px;
+    top: calc(50% - 350px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+.text-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    max-width: 1080px;
+    top: 350px;
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    pointer-events: all;
+}
+
+.text-blurb {
+    margin-top: 40px;
+    background: transparent;
+    border: 2px solid #f5bcc1;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    padding: 30px 40px;
+    color: var(--middle-purple--);
+}
+
+.text-blurb p {
+    color: var(--spanish-pink--);
 }
 
 /* ---Mobile Viewport--- */
@@ -150,5 +184,9 @@ header {
     .home-spacer {
         max-width: 100%;
         width: 100%;
+    }
+
+    .text-section {
+        flex-direction: column;
     }
 }

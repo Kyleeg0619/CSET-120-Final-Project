@@ -79,26 +79,7 @@ section{
     font-size: 20px;
 } */
 /* forgot password part  and remember me*/
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-    color: #db90be;
-}
-.remember-forgot label input{
-    accent-color: #f5bcc1;
-    margin-right: 3px;
 
-}
-.remember-forgot a {
-    color: #f5bcc1;
-    text-decoration: none;
-}
-.remember-forgot a:hover {
-    color: #db90be;
-    text-decoration: underline;
-}
 /* login button */
 .wrapper .btn{
     width: 100%;
@@ -119,12 +100,13 @@ section{
     margin: 20px 0 15px;
     color: #db90be;
 }
-.register-link p a{
+.register-link p button{
     color: #3f0a29;
     text-decoration: none;
     font-weight: 600;
+    border: none;
 }
-.register-link p a:hover{
+.register-link p button:hover{
     color: #f5bcc1;
     text-decoration: underline;
 }

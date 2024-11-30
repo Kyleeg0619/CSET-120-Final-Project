@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Style Sheets -->
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/signup-login.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/signup-login.css" />
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/eod1kak.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://use.typekit.net/eod1kak.css" />
+  </head>
+  <body>
     <nav>
-        <ul class="nav-list">
-            <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
-            <li class="nav-item"><a href="index.html" class="nav-links">Home</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
-        </ul>
-        <div class="nav-login-signin">
-            <a href="#" class="sign-up nav-item">Signup</a>
-            <span class="diamond">&#9670;</span>
-            <a href="#" class="login nav-item">Login</a>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+      <ul class="nav-list">
+        <img src="images/logo.PNG" alt="" width="100px" class="nav-item" />
+        <li class="nav-item">
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-links">Contact</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
     <section>
-        <div class="container" id="container">
-            <div class="form-container sign-in-container">
+      <div class="container" id="container">
+        <div class="form-container sign-in-container">
+          <div class="wrapper">
+            <form>
+              <h1>Log in</h1>
+              <div class="input-box">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  id="userName"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="userPw"
+                  required
+                />
+              </div>
+              <button
+                type="button"
+                class="btn"
+                id="logIn_btn"
+                onclick="check(event)"
+              >
+                Login
+              </button>
 
-                <div class="wrapper">
-
-                    <form action="#">
-                        <h1>Log in</h1>
-                        <div class="input-box">
-                            <input type="text" placeholder="Username" id="userName" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password" id="userPw" required>
-                        </div>
-                        <button type="submit" class="btn" id="logIn_btn" onclick="check()">Login</button>
-
-                        <div class="register-link">
-                            <p>Don't have an account?
-                                <a href="#"class="ghost" id="signUp">Register </a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="form-container sign-up-container" id="signupForm">
-
-                <div class="wrapper">
-
-                    <form action="#">
-                        <h1>Create Account</h1>
-                        <div class="input-box">
-                            <input type="text" placeholder="Username" id="name" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password" id="pw" required>
-                        </div>
-
-                        <button type="submit" class="btn"  value="Register" onclick="store()">Sign Up</button>
-
-                        <div class="register-link">
-                            <p>Have an account?
-                                <a href="#" class="ghost" id="signIn">Login here </a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
+              <div class="register-link">
+                <p>
+                  Don't have an account?
+                  <button class="ghost" id="signUp">Register</button>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="form-container sign-up-container" id="signupForm">
+          <div class="wrapper">
+            <form>
+              <h1>Create Account</h1>
+              <div class="input-box">
+                <input type="text" placeholder="Username" id="name" required />
+              </div>
+              <div class="input-box">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="pw"
+                  required
+                />
+              </div>
+
+              <button class="btn" value="Register" onclick="store()">
+                Sign Up
+              </button>
+
+              <div class="register-link">
+                <p>
+                  Have an account?
+                  <button class="ghost" id="signIn">Login here</button>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <footer>
-        <div class="footer-sign-up">
-            <a href="#" class="sign-up">Signup</a>
-            <span class="diamond">&#9670;</span>
-            <a href="#" class="login">Login</a>
-        </div>
-        <div class="footer-nav">
-            <a href="index.html" class="footer-links"><span class="diamond">&#9670;</span>Home</a>
-            <a href="menu.html" class="footer-links"><span class="diamond">&#9670;</span>Menu</a>
-            <a href="contact.html" class="footer-links"><span class="diamond">&#9670;</span>Contact</a></div>
+      <div class="footer-sign-up">
+        <a href="#" class="sign-up">Signup</a>
+        <span class="diamond">&#9670;</span>
+        <a href="#" class="login">Login</a>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html" class="footer-links"
+          ><span class="diamond">&#9670;</span>Home</a
+        >
+        <a href="menu.html" class="footer-links"
+          ><span class="diamond">&#9670;</span>Menu</a
+        >
+        <a href="contact.html" class="footer-links"
+          ><span class="diamond">&#9670;</span>Contact</a
+        >
+      </div>
     </footer>
     <script src="scripts/nav.js"></script>
-    <script src="scripts/signup-login.js"></script>
-</body>
+    <script src="scripts/login.js"></script>
+  </body>
 </html>

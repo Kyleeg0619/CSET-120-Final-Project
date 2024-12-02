@@ -1,5 +1,6 @@
 /* Color Palette */
 :root {
+<<<<<<< Updated upstream
     --brown-chocolate--: #620e2c;
     --dark-chocolate--: #3f0a29;
     --twilight-lavender--: #94426a;
@@ -8,6 +9,19 @@
     /* background pic */
     --licorice--: #200B18;
     --raisin-black--: #2C1724;
+=======
+  --brown-chocolate--: #620e2c;
+  --dark-chocolate--: #3f0a29;
+  --twilight-lavender--: #94426a;
+  --middle-purple--: #db90be;
+  --spanish-pink--: #f5bcc1;
+  /* Background pic */
+  --licorice--: #200b18;
+  --raisin-black--: #2c1724;
+
+  /* Dropdown Color */
+  --muted-red--: #7a5065;
+>>>>>>> Stashed changes
 }
 
 /* Header */
@@ -64,11 +78,52 @@ li{
 label{
     color: var(--spanish-pink--);
 }
+<<<<<<< Updated upstream
 /* Dropdown Menus */
 .dropdown{
     position: relative;
     display: inline-block;
     width: 200px;
+=======
+
+/* Dropdown Menus */
+select {
+  background:var(--muted-red--);
+  color: var(--licorice--);
+  border:#2c1724;
+  border-width: 2px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+option {
+  background: var(--licorice--);
+  color: var(--muted-red--);
+  border: var(--raisin-black--);
+  border-radius: 5px;
+  cursor: pointer;
+}
+option:focus {
+  outline: none;
+}
+option:hover {
+  background: var(--middle-purple--);
+  color: var(--spanish-pink--);
+}
+/* Review & Submit Buttons */
+#reviewOrder {
+  display: block;
+  width: max-content;
+  padding: 15px 20px;
+  border: 1px solid var(--spanish-pink--);
+  border-radius: 30px;
+  background: none;
+  color: var(--spanish-pink--);
+  font-size: 2rem;
+  margin: 15px auto;
+  text-decoration: none;
+>>>>>>> Stashed changes
 }
 .dropdown > input{
     display: none; /* hides checkbox */

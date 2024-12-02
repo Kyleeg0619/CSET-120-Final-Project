@@ -1,0 +1,140 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+/*Color Palette */
+:root {
+    --brown-chocolate--: #620e2c;
+    --dark-chocolate--: #3f0a29;
+    --twilight-lavender--: #94426a;
+    --middle-purple--: #db90be;
+    --spanish-pink--: #f5bcc1;
+}
+
+h2{
+    text-align: center;
+    margin: 25px;
+  }
+
+h1{
+    text-align: center;
+    margin: 40px;
+    padding: 40px;
+  }
+  
+  /* General Styles */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+    background-image: url("../images/receipt-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    color: var(--dark-chocolate--);
+  }
+
+  .receipt-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-info p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Receipt Title */
+  .receipt-title {
+    text-align: center;
+    color: var(--dark-chocolate--);
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Details Section */
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .billed-to,
+  .receipt-info {
+    font-size: 14px;
+  }
+  
+  .billed-to p,
+  .receipt-info p {
+    margin: 5px 0;
+  }
+  
+  /* Table */
+  .receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .receipt-table th,
+  .receipt-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .receipt-table th {
+    background-color: var(--dark-chocolate--);
+    color: white;
+  }
+  
+  /* Totals Section */
+  .totals {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .totals p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .totals span {
+    color: var(--dark-chocolate--);
+  }
+  
+  /* Notes Section */
+  .notes {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .notes strong {
+    color: #4b8063;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .details {
+      flex-direction: column;
+    }
+  
+    .billed-to,
+    .receipt-info {
+      margin-bottom: 10px;
+    }
+  }

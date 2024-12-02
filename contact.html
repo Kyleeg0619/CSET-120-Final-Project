@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- Style Sheets -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/contact.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/eod1kak.css">
+</head>
+<body>
+        <nav>
+            <ul class="nav-list">
+                <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
+                <li class="nav-item"><a href="index.html" class="nav-links">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
+            </ul>
+            <div class="nav-login-signin">
+                <a href="signup-login.html" class="sign-up nav-item">Signup</a>
+                <span class="diamond">&#9670;</span>
+                <a href="#" class="login nav-item">Login</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <header>
+            <h1>About Bloom and Brew</h1>
+            <img src="images/moon-phases.png" alt="">
+        </header>
+        
+ 
+        <section class="contact-us">
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                    <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="formMessage" class="hidden">Thank you for reaching out! We will get back to you soon.</p>
+            </div>
+    
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h3>Call Us</h3>
+                <p>+1 (234) 567-891</p>
+                <h3>Location</h3>
+                <p>121 Moon Street, Salem, Massachusetts 01915</p>
+                <h3>Business Hours</h3>
+                <p>Mon - Fri: 8 am - 3 pm<br>Sat: 10am- 3pm; <br>  Sun: Closed</p>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <div>
+                <h2 class="h2-other">Why We Started Bloom & Brew</h2>
+                <div class="quotes-grid">
+                    <div class="quote">
+                        <blockquote>
+                            "I’ve always been captivated by the balance between the vastness of the sky and the grounding energy of the earth. There’s something so humbling about looking up at a night full of stars, while also finding comfort in the textures and scents of the natural world around us. For me, these two forces—celestial and earthly—are both awe-inspiring and calming, and I wanted to create a space where others could experience that same harmony.
+                            <br>
+                            The idea for the coffee shop started as a personal dream. I wanted a place where people could step out of their busy routines and feel both inspired and grounded, even for a moment. Coffee, with its earthy roots and its ability to bring people together, felt like the perfect centerpiece for this vision. I imagined a space where every cup could be a moment to pause and reconnect, whether with yourself, others, or the world around you.
+                            <br>
+                            When I shared this vision with my assistant managers, their support and enthusiasm made it clear that this dream was possible. Each of them brought a unique strength to the table. One had an exceptional ability to craft coffee blends that evoke the natural world, from earthy tones to bright and vibrant flavors. Another had a gift for creating welcoming, atmospheric spaces that felt like a retreat. And the third shared a passion for sustainability, making sure every choice we made respected the environment. Together, we found a way to make this dream a reality.
+                            <br>
+                            Our coffee shop is a blend of these inspirations: the wonder of the skies and the richness of the earth. Every detail reflects this balance, from the starry accents in our decor to the locally-sourced ingredients in our food and drinks. We want this to be more than just a place to grab coffee. It’s a space to breathe, reflect, and take in the beauty of both the world above and the ground beneath our feet.
+                            <br>
+                            We opened this shop because we believe in the power of small, meaningful moments. Whether you’re enjoying a thoughtfully crafted latte, catching up with a friend, or simply taking a moment to yourself, we hope this space gives you the same sense of wonder and grounding that inspired us to create it." <em>- Kylee Grasela</em>
+                         </blockquote>
+                         <h1>Meet The Staff</h1>
+                        <div class="employee-info">
+                            <img src="../images/witchcat.jpg" alt="kylees image" class="employee-photo">
+                            <p class="name">Kylee Grasela → Owner, Manager</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div class="employee-info">
+                            <img src="../images/witchcatbook.jpg" alt="camilas image" class="employee-photo">
+                            <p class="name">Camila Urena → Co-Owner, Assistant Manager</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div class="employee-info">
+                            <img src="../images/vampirecat.jpg" alt="brookes image" class="employee-photo">
+                            <p class="name">Brooke Spangler →  Co-Owner, Assistant Manager</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div class="employee-info">
+                            <img src="../images/halloweencat.jpg" alt="brittanys image" class="employee-photo">
+                            <p class="name">Brittany Fetters →  Co-Owner, Assistant Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="footer-sign-up">
+            <a href="#" class="sign-up">Signup</a>
+            <span class="diamond">&#9670;</span>
+            <a href="#" class="login">Login</a>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html" class="footer-links"><span class="diamond">&#9670;</span>Home</a>
+            <a href="menu.html" class="footer-links"><span class="diamond">&#9670;</span>Menu</a>
+            <a href="contact.html" class="footer-links"><span class="diamond">&#9670;</span>Contact</a></div>
+    </footer>
+    
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/contact.js"></script>
+
+</body>
+</html>

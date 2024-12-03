@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Style Sheets -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/order.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/eod1kak.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul class="nav-list">
+            <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
+            <li class="nav-item"><a href="index.html" class="nav-links">Home</a></li>
+            <li class="nav-item"><a href="menu.html" class="nav-links">Menu</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-links">Contact</a></li>
+        </ul>
+        <div class="nav-login-signin">
+            <a href="signup-login.html" class="sign-up nav-item">Signup</a>
+            <span class="diamond">&#9670;</span>
+            <a href="#" class="login nav-item">Login</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="order-section">
+            <h4>Order Now!</h4>
+            <p>Choose from our pre-made options</p>
+            <section class="pre-options">
+                <div class="p-option">
+                        <h3>Coffee</h3>
+                        <ul>
+                            <li><input type="checkbox" data-price="5"> Sunrise Ritual - $5</li>
+                            <p>Creamy, smooth latte</p>
+                            <li><input type="checkbox" data-price="5"> Moonlit Elixir - $5</li>
+                            <p>Dark cold brew</p>
+                            <li><input type="checkbox" data-price="5"> Midnight Brew - $5</li>
+                            <p>Bold, rich cold brew</p>
+                            <li><input type="checkbox" data-price="6"> Sunset Latte - $6</li>
+                            <p>Warm cinnamon caramel latte</p>
+                            <li><input type="checkbox" data-price="5"> Witch's Brew - $5</li>
+                            <p>Rich, bold chocolate coffee</p>
+                            <li><input type="checkbox" data-price="6"> Dark Arts Espresso - $6</li>
+                            <p>Strong dark espresso</p>
+                        </ul> 
+                </div>
+                <div class="p-option">
+                    <h3>Teas & Other Drinks</h3>
+                        <ul>
+                            <li><input type="checkbox" data-price="4"> Starry Night Cocoa - $4</li>
+                            <p>Hot chocolate with Marshmallows</p>
+                            <p>Choice of vanilla, pumpkin spice, or peppermint creamers</p>
+                            <li><input type="checkbox" data-price="6"> Cinnamon Spell - $6</li>
+                            <p>cinnamon chai latte</p>
+                            <li><input type="checkbox" data-price="6"> Potion of The Forest - $6</li>
+                            <p>Matcha latte</p>
+                            <li><input type="checkbox" data-price="4"> Moonbeam Tea - $4</li>
+                            <p>chamomile, lavender, & honey tea</p>
+                            <li><input type="checkbox" data-price="6"> Witch's Orchard - $6</li>
+                            <p>Pear, apple, and Hibiscus</p>
+                            <li><input type="checkbox" data-price="6"> Starlight Pearls - $6</li>
+                            <p>Fruity bubble tea</p>
+                            <li><input type="checkbox" data-price="6"> Lavender Moon - $6</li>
+                            <p>Lavender chamomile tea</p>
+                        </ul>
+                </div>
+                <div class="p-option">     
+                    <h3>Pastries & Food</h3>
+                    <ul>
+                        <li><input type="checkbox" data-price="4">The Witch's Spiral - $4</li>
+                        <p>Cinnamon roll with sweet glaze and edible glitter</p>
+                        <li><input type="checkbox" data-price="5">Spellbound Muffins - $5</li>
+                        <p>Chocolate chip, blueberry, banana nut, or cinnamon chai</p>
+                        <li><input type="checkbox" data-price="7">Herbal Spell Toast - $7</li>
+                        <p>Avocado spread with herbs</p>
+                        <li><input type="checkbox" data-price="3">Enchanted Moon Cookies - $3</li>
+                        <p>Chocolate chip</p>
+                        <li><input type="checkbox" data-price="7">Mystic Herb & Veggie Wrap - $7</li>
+                        <p>mixed greens or spinach, bell peppers, avocado, and more</p>
+                        <li><input type="checkbox" data-price="5">Potion of Prosperity Soup - $5</li>
+                        <p>Chicken noodle, vegetable, italian wedding</p>
+                        <li><input type="checkbox" data-price="7">Celestial Stack - $7</li>
+                        <p>Pancakes or Waffles, with syrup and edible glitter</p>
+                    </ul>
+                </div>
+            </section>
+
+            <h4>Create your Own! - Starting from $5.00</h4>
+            <section class="pre-options">
+                <section class="custom-options">
+                    <div class="p-option">     
+                        <h3>Drink Bases</h3>
+                        <br>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <label class="base-heading" for="base">Milk Bases - $5</label>
+                                <br>
+                                <select name="milk-base" id="milk-base" data-price="5">
+                                    <option>Whole Milk</option>
+                                    <option>Fat-Free Milk</option>
+                                    <option>Oat Milk</option>
+                                    <option>Almond Milk</option>
+                                    <option>Soy Milk</option>
+                                </select>
+                            </li>
+                            <li><input type="checkbox" data-price="5">Water</li>
+                            <li><input type="checkbox" data-price="5">Lemonade</li>
+                            <li><input type="checkbox" data-price="5">Matcha</li>
+                            <li><input type="checkbox" data-price="5">Chai</li>
+                            <li><input type="checkbox" data-price="5">Espresso</li>
+                            <li><input type="checkbox" data-price="5">Coffee</li>
+                        </ul>
+                    </div>
+                    <div class="p-option">     
+                        <h3>Flavors</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <label for="syrups">Syrups - $0.25</label>
+                                <br>
+                                <select name="syrups" id="syrups" data-price="0.25">
+                                    <option>Lavender</option>
+                                    <option>Vanilla</option>
+                                    <option>Taro</option>
+                                    <option>Milk Chocolate</option>
+                                    <option>Dark Chocolate</option>
+                                    <option>Marshmallow</option>
+                                    <option>Mocha</option>
+                                    <option>Ginger</option>
+                                    <option>Cinnamon</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label for="fruit-syrups">Fruit Syrups - $0.30</label>
+                                <br>
+                                <select name="fruit-syrups" id="fruit-syrups" data-price="0.30">
+                                    <option>Apple</option>
+                                    <option>Strawberry</option>
+                                    <option>Mango</option>
+                                    <option>Passion Fruit</option>
+                                    <option>Blueberry</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label for="seasonal-flavors">Seasonal Flavors - $0.45</label>
+                                <br>
+                                <select name="seasonal-flavors" id="seasonal-flavors" data-price="0.45">
+                                    <option>Pumpkin</option>
+                                    <option>Clove</option>
+                                    <option>Eggnog</option>
+                                    <option>Gingerbread</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="p-option">     
+                        <h3>Drink Add-ons</h3>
+                        <ul>
+                            <li><input type="checkbox" data-price="0">Sugar/ Syrups</li>
+                            <li><input type="checkbox" data-price="0">Honey</li>
+                            <li><input type="checkbox" data-price="0">Whipped Cream </li>
+                            <li><input type="checkbox" data-price="0">Extra Shot of Espresso</li>
+                            <li><input type="checkbox" data-price="0">Drizzles</li>
+                            <li><input type="checkbox" data-price="0">Cold Foam</li>
+                            <li>
+                                <input type="checkbox">
+                                <label for="boba">Boba - $1.75</label>
+                                <br>
+                                <select name="boba" id="boba" data-price="1.75">
+                                    <option>Milk Tea</option>
+                                    <option>Green Tea</option>
+                                    <option>Brown Sugar</option>
+                                    <option>Crystal Boba</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label for="pop-pearls">Pop Pearls - $1.75</label>
+                                <br>
+                                <select name="pop-pearls" id="pop-pearls" data-price="1.75">
+                                    <option>Strawberry</option>
+                                    <option>Mango</option>
+                                    <option>Lychee</option>
+                                    <option>Passion Fruit</option>
+                                    <option>Cherry</option>
+                                    <option>Cranberry</option>
+                                </select>
+                            </li>
+                    </div>
+                </section>
+            </section>
+            <input type="submit" id="reviewOrder" value="Review Order">
+            <input type="submit" id="submitOrder" value="Submit Order">
+            <div class="review-order">
+                <h4>Your Order</h4>
+                <div class="cart-items-container">
+                  </div>
+                  
+                  <!-- Order Summary -->
+                  <div class="order-summary">
+                    <!-- <p>Total: $<span id="total-price">0.00</span></p> -->
+                    <button id="submitOrder" style="display:none;">Submit Order</button>
+                  </div>
+                  
+                <!-- Total Price -->
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-sign-up">
+            <a href="#" class="sign-up">Signup</a>
+            <span class="diamond">&#9670;</span>
+            <a href="#" class="login">Login</a>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html" class="footer-links"><span class="diamond">&#9670;</span>Home</a>
+            <a href="menu.html" class="footer-links"><span class="diamond">&#9670;</span>Menu</a>
+            <a href="contact.html" class="footer-links"><span class="diamond">&#9670;</span>Contact</a></div>
+    </footer>
+    
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/order.js"></script>
+</body>
+</html>

@@ -11,11 +11,7 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove('right-panel-active');
 });
-
-// establish customer role
-var userRole;
-
-// store function - defines username, password, and userrole based on username
+// store function - defines username, password, and user role based on username
 function store(){
 
     var name = document.getElementById('name');
@@ -35,13 +31,7 @@ function store(){
     }else{
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
-        if (name === 'kyleeg') {
-            userRole = 'manager';
-            localStorage.setItem('userRole', 'manager');
-        } else {
-            userRole = 'customer';
-            localStorage.setItem('userRole', 'customer');
-        }
+        localStorage.setItem('userRole', 'customer');
         alert('Your account has been created');
     }
 }
@@ -50,26 +40,27 @@ function store(){
 function check(event) {
     event.preventDefault(); // Prevent form submission
 
-    var storedName = localStorage.getItem('name');
-    var storedPw = localStorage.getItem('pw');
-    var storedRole = localStorage.getItem('userRole');
+    const storedName = localStorage.getItem('name');
+    const storedPw = localStorage.getItem('pw');
+    const storedRole = localStorage.getItem('userRole');
 
-    var userName = document.getElementById('userName');
-    var userPw = document.getElementById('userPw');
+    const userName = document.getElementById('userName').value;
+    const userPw = document.getElementById('userPw').value;
 
-    console.log(localStorage.getItem('userRole'));
-    if (userName.value === storedName && userPw.value === storedPw) {
-        alert('You are logged in.');
-        if (storedRole === 'manager') {
+    console.log(`stored role: ${storedRole}`);
+    
+// for manager view log in with user = kylee and password = 333////
+    if (userName === "kylee" && userPw === "333") {
+        alert('You are logged in as a manager.');
+        window.location.href = '../manager.html'; // Redirect to manager's page
+    } else if (userName === storedName && userPw === storedPw) {
+        alert('You are logged in as a customer.');
+        if (storedRole === 'customer') {
             console.log(`User role: ${storedRole}`);
-            window.location.href = '../order.html'; // Correct path to manager's page
+            window.location.href = '../landing.html'; // Correct path to manager's page
             console.log('Navigating to:', window.location.href);
         } else {
-            console.log(`User role: ${storedRole}`);
-            window.location.href = '../landing.html'; // Correct path to customer's page
-            console.log('Navigating to:', window.location.href);
+            alert('Error on login');
         }
-    } else {
-        alert('Error on login');
-    }
+}
 }

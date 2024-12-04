@@ -1,53 +1,33 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  const formMessage = document.getElementById("formMessage");
+// document.addEventListener("DOMContentLoaded", () => {
+    
+// });
 
-  // Declare variables to store input data
-  let feedbackName = "";
-  let feedbackEmail = "";
-  let feedbackMessage = "";
+function storeContactItems() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
 
-  form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Prevent actual form submission
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("message", message);
 
-  // Assign input values to variables
-  feedbackName = document.getElementById("name").value.trim();
-  feedbackEmail = document.getElementById("email").value.trim();
-  feedbackMessage = document.getElementById("message").value.trim();
+    // when button is clicked, hide the user's inputs
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
 
-  if (feedbackName && feedbackEmail && feedbackMessage) {
-    console.log("Feedback Data:");
-    console.log("Name:", feedbackName);
-    console.log("Email:", feedbackEmail);
-    console.log("Message:", feedbackMessage);
+    alert("Stored Contact information");
 
-    form.reset(); // Clear the form
-    formMessage.classList.remove("hidden"); // Show the success message
+    // displays the formMessage from contact.html
+    let formMessage = document.getElementById("formMessage");
+    formMessage.classList.remove("hidden");
 
-    // Optionally hide the success message after a few seconds
+    // message goes away after 3 seconds
     setTimeout(() => {
         formMessage.classList.add("hidden");
     }, 3000);
-} else {
-    alert("Please fill out all fields before submitting.");
 }
-});
-});
 
-  // Simulate form submission logic
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-      if (name && email && message) {
-          form.reset(); // Clear the form
-          formMessage.classList.remove("hidden"); // Show the success message
-
-          // Optionally hide the success message after a few seconds
-          setTimeout(() => {
-              formMessage.classList.add("hidden");
-          }, 3000);
-      }
 
 

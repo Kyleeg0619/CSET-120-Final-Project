@@ -34,68 +34,181 @@
 
     <main>
         <section class="order-section">
-            <h4>Order Now!</h4>
-            <p>Choose from our pre-made options</p>
-            <section class="pre-options">
-                <div class="p-option">
-                        <h3>Coffee</h3>
-                        <ul>
-                            <li><input type="checkbox" data-price="5"> Sunrise Ritual - $5</li>
-                            <p>Creamy, smooth latte</p>
-                            <li><input type="checkbox" data-price="5"> Moonlit Elixir - $5</li>
-                            <p>Dark cold brew</p>
-                            <li><input type="checkbox" data-price="5"> Midnight Brew - $5</li>
-                            <p>Bold, rich cold brew</p>
-                            <li><input type="checkbox" data-price="6"> Sunset Latte - $6</li>
-                            <p>Warm cinnamon caramel latte</p>
-                            <li><input type="checkbox" data-price="5"> Witch's Brew - $5</li>
-                            <p>Rich, bold chocolate coffee</p>
-                            <li><input type="checkbox" data-price="6"> Dark Arts Espresso - $6</li>
-                            <p>Strong dark espresso</p>
-                        </ul> 
-                </div>
-                <div class="p-option">
-                    <h3>Teas & Other Drinks</h3>
-                        <ul>
-                            <li><input type="checkbox" data-price="4"> Starry Night Cocoa - $4</li>
-                            <p>Hot chocolate with Marshmallows</p>
-                            <p>Choice of vanilla, pumpkin spice, or peppermint creamers</p>
-                            <li><input type="checkbox" data-price="6"> Cinnamon Spell - $6</li>
-                            <p>cinnamon chai latte</p>
-                            <li><input type="checkbox" data-price="6"> Potion of The Forest - $6</li>
-                            <p>Matcha latte</p>
-                            <li><input type="checkbox" data-price="4"> Moonbeam Tea - $4</li>
-                            <p>chamomile, lavender, & honey tea</p>
-                            <li><input type="checkbox" data-price="6"> Witch's Orchard - $6</li>
-                            <p>Pear, apple, and Hibiscus</p>
-                            <li><input type="checkbox" data-price="6"> Starlight Pearls - $6</li>
-                            <p>Fruity bubble tea</p>
-                            <li><input type="checkbox" data-price="6"> Lavender Moon - $6</li>
-                            <p>Lavender chamomile tea</p>
-                        </ul>
-                </div>
-                <div class="p-option">     
-                    <h3>Pastries & Food</h3>
-                    <ul>
-                        <li><input type="checkbox" data-price="4">The Witch's Spiral - $4</li>
-                        <p>Cinnamon roll with sweet glaze and edible glitter</p>
-                        <li><input type="checkbox" data-price="5">Spellbound Muffins - $5</li>
-                        <p>Chocolate chip, blueberry, banana nut, or cinnamon chai</p>
-                        <li><input type="checkbox" data-price="7">Herbal Spell Toast - $7</li>
-                        <p>Avocado spread with herbs</p>
-                        <li><input type="checkbox" data-price="3">Enchanted Moon Cookies - $3</li>
-                        <p>Chocolate chip</p>
-                        <li><input type="checkbox" data-price="7">Mystic Herb & Veggie Wrap - $7</li>
-                        <p>mixed greens or spinach, bell peppers, avocado, and more</p>
-                        <li><input type="checkbox" data-price="5">Potion of Prosperity Soup - $5</li>
-                        <p>Chicken noodle, vegetable, italian wedding</p>
-                        <li><input type="checkbox" data-price="7">Celestial Stack - $7</li>
-                        <p>Pancakes or Waffles, with syrup and edible glitter</p>
-                    </ul>
+            <section class="container content-section">
+                <div id="order-menu" class="shop-items" >
+                    <div id="coffee-section">
+                        <h1 class="menu-section-header"><span class="diamond">&#9670;</span>Coffee<span class="diamond">&#9670;</span></h1>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Sunrise Ritual</span>
+                            <img class="shop-item-image" src="images/menu-images/sunrise-ritual.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$4.35</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Moonlit Elixir</span>
+                            <img class="shop-item-image" src="images/menu-images/moonlight-elixer.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$5.20</span>
+                                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Midnight Brew</span>
+                            <img class="shop-item-image" src="images/menu-images/midnight-brew.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$5.35</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Sunset Latte</span>
+                            <img class="shop-item-image" src="images/menu-images/sunset-latte.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$6.00</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Witch's Brew</span>
+                            <img class="shop-item-image" src="images/menu-images/witchs-brew.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$4.95</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Dark Arts Espresso</span>
+                            <img class="shop-item-image" src="images/menu-images/darkarts-expresso.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$5.95</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tea-section">
+                        <h1 class="menu-section-header"><span class="diamond">&#9670;</span>Tea's and Other Drinks<span class="diamond">&#9670;</span></h1>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Starry Night Cocoa</span>
+                            <img class="shop-item-image" src="images/menu-images/starry-night-cocoa.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$3.55</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Cinnamon Spell</span>
+                            <img class="shop-item-image" src="images/menu-images/cinnamon-spell.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$5.75</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Potion of the Forest</span>
+                            <img class="shop-item-image" src="images/menu-images/potion-ofthe-forest.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$6.10</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Moonbeam Tea</span>
+                            <img class="shop-item-image" src="images/menu-images/moonbeam-tea.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$4.10</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Witch's Orchard</span>
+                            <img class="shop-item-image" src="images/menu-images/witchs-orchard.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$5.85</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Starlight Pearls</span>
+                            <img class="shop-item-image" src="images/menu-images/starlight-pearls.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$6.25</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Lavender Moon</span>
+                            <img class="shop-item-image" src="images/menu-images/lavender-moon.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$5.80</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dessert-section">
+                        <h1 class="menu-section-header"><span class="diamond">&#9670;</span>Pastries and Food<span class="diamond">&#9670;</span></h1>
+                        <div class="shop-item">
+                            <span class="shop-item-title">The Witch's Spiral</span>
+                            <img class="shop-item-image" src="images/menu-images/witchs-spiral.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$3.75</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Spellbound Muffins</span>
+                            <img class="shop-item-image" src="images/menu-images/spellbound-muffins.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$2.15</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Herbal Spell Toast</span>
+                            <img class="shop-item-image" src="images/menu-images/herbal-toast.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$3.15</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Enchanted Moon Cookies</span>
+                            <img class="shop-item-image" src="images/menu-images/enchanted-moon-cookies.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$2.75</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Mystic Herb & Veggie Wrap</span>
+                            <img class="shop-item-image" src="images/menu-images/herb&veggie-wrap.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$6.55</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Potion of Prosperity</span>
+                            <img class="shop-item-image" src="images/menu-images/potion-ofthe-forest.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$4.85</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Celestial Stack</span>
+                            <img class="shop-item-image" src="images/menu-images/celestial-stack.png">
+                            <div class="shop-item-details">
+                                <span class="shop-item-price">$6.85</span>
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-
-            <h4>Create your Own! - Starting from $5.00</h4>
+            <!-- Custom Section -->
+            <h4><span class="diamond">&#9670;</span>Create your Own! ~ Starting from $5.00<span class="diamond">&#9670;</span></h4>
             <section class="pre-options">
                 <section class="custom-options">
                     <div class="p-option">     
@@ -104,9 +217,9 @@
                         <ul>
                             <li>
                                 <input type="checkbox">
-                                <label class="base-heading" for="base">Milk Bases - $5</label>
+                                <label class="base-heading" for="base">Milk Bases</label>
                                 <br>
-                                <select name="milk-base" id="milk-base" data-price="5">
+                                <select name="milk-base" id="milk-base" data-price="0" class="dropdown">
                                     <option>Whole Milk</option>
                                     <option>Fat-Free Milk</option>
                                     <option>Oat Milk</option>
@@ -114,12 +227,12 @@
                                     <option>Soy Milk</option>
                                 </select>
                             </li>
-                            <li><input type="checkbox" data-price="5">Water</li>
-                            <li><input type="checkbox" data-price="5">Lemonade</li>
-                            <li><input type="checkbox" data-price="5">Matcha</li>
-                            <li><input type="checkbox" data-price="5">Chai</li>
-                            <li><input type="checkbox" data-price="5">Espresso</li>
-                            <li><input type="checkbox" data-price="5">Coffee</li>
+                            <li><input type="checkbox" data-price="0">Water</li>
+                            <li><input type="checkbox" data-price="0">Lemonade</li>
+                            <li><input type="checkbox" data-price="0">Matcha</li>
+                            <li><input type="checkbox" data-price="0">Chai</li>
+                            <li><input type="checkbox" data-price="0">Espresso</li>
+                            <li><input type="checkbox" data-price="0">Coffee</li>
                         </ul>
                     </div>
                     <div class="p-option">     
@@ -129,7 +242,7 @@
                                 <input type="checkbox">
                                 <label for="syrups">Syrups - $0.25</label>
                                 <br>
-                                <select name="syrups" id="syrups" data-price="0.25">
+                                <select name="syrups" id="syrups" data-price="0.25" class="dropdown">
                                     <option>Lavender</option>
                                     <option>Vanilla</option>
                                     <option>Taro</option>
@@ -145,7 +258,7 @@
                                 <input type="checkbox">
                                 <label for="fruit-syrups">Fruit Syrups - $0.30</label>
                                 <br>
-                                <select name="fruit-syrups" id="fruit-syrups" data-price="0.30">
+                                <select name="fruit-syrups" id="fruit-syrups" data-price="0.30" class="dropdown">
                                     <option>Apple</option>
                                     <option>Strawberry</option>
                                     <option>Mango</option>
@@ -157,7 +270,7 @@
                                 <input type="checkbox">
                                 <label for="seasonal-flavors">Seasonal Flavors - $0.45</label>
                                 <br>
-                                <select name="seasonal-flavors" id="seasonal-flavors" data-price="0.45">
+                                <select name="seasonal-flavors" id="seasonal-flavors" data-price="0.45" class="dropdown">
                                     <option>Pumpkin</option>
                                     <option>Clove</option>
                                     <option>Eggnog</option>
@@ -180,7 +293,7 @@
                                 <input type="checkbox">
                                 <label for="boba">Boba - $1.75</label>
                                 <br>
-                                <select name="boba" id="boba" data-price="1.75">
+                                <select name="boba" id="boba" data-price="1.75" class="dropdown">
                                     <option>Milk Tea</option>
                                     <option>Green Tea</option>
                                     <option>Brown Sugar</option>
@@ -191,7 +304,7 @@
                                 <input type="checkbox">
                                 <label for="pop-pearls">Pop Pearls - $1.75</label>
                                 <br>
-                                <select name="pop-pearls" id="pop-pearls" data-price="1.75">
+                                <select name="pop-pearls" id="pop-pearls" data-price="1.75" class="dropdown">
                                     <option>Strawberry</option>
                                     <option>Mango</option>
                                     <option>Lychee</option>
@@ -202,12 +315,31 @@
                             </li>
                     </div>
                 </section>
+                <button class="btn btn-primary" id="customOrder" type="button" onclick="calcCustomTotal()">ADD TO CUSTOM DRINK CART</button>
             </section>
-            <input type="submit" id="submitOrder" value="Submit Order">
-            <input type="submit" id="reviewOrder" value="Review Order">
+            <!-- *** CART SECTION *** -->
+            <section class="container content-section" id="cart">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+    
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+
+                <label class="cust-label">Name for the Order:</label>
+                <input id="customerName" type="text" placeholder="Customer Name" required>
+
+                <button class="btn btn-purchase" type="button" id="submitOrder">PURCHASE</button>
+            </section>
 
         </section>
-        <div id="order-summary"></div>
     </main>
 
     <footer>
@@ -224,5 +356,6 @@
     
     <script src="scripts/nav.js"></script>
     <script src="scripts/order.js"></script>
+    <script src="scripts/manager.js"></script>
 </body>
 </html>

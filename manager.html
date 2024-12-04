@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager View</title>
+    <!-- Style Sheets -->
+     <link rel="stylesheet" href="css/manager.css">
+     <link rel="stylesheet" href="css/mini-receipt.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/eod1kak.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <img src="images/logo.PNG" alt="" width="100px" class="nav-item">
+                <li class="nav-item"><h1>Welcome Manager</h1></li>
+            </ul>
+            <div class="nav-login-signout">
+                <!-- <span class="diamond">&#9670;</span> -->
+                <a href="signup-login.html" class="login nav-item">Signout</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box" onclick="showSection('receipts')">View Receipts</div>
+        <div class="box" onclick="showSection('feedback')">View Feedback</div>
+        <div class="box" onclick="showSection('orders')">View & Change Menu</div>
+    </div>
+
+    <div class="content" id="receipts">
+        <h2>Receipts</h2>
+        <p>Here you can view all the receipts.</p>
+        <div id="receiptFeedback">
+
+        </div>
+    </div>
+    <div class="content" id="feedback">
+        <h2>Feedback</h2>
+        <p>Here you can view feedback from customers.</p>
+        <p id="name"></p>
+        <p id="email"></p>
+        <p id="message"></p>
+    </div>
+    <div class="content" id="orders">
+        <h2>View & Change Menu</h2>
+        <p>Manage your menu items below by adding, deleting, or updating prices.</p>
+        
+        <!-- Menu Controls -->
+        <div class="menu-controls">
+            <input type="text" id="item-name" placeholder="Item Name" />
+            <input type="number" id="item-price" placeholder="Price" step="0.01" />
+            <button onclick="addMenuItem()">Add/Update Item</button>
+        </div>
+
+        <!-- Dynamic Menu List -->
+        <ul id="menu-list">
+            <!-- Menu items will be dynamically rendered here -->
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-sign-up">
+            <a href="#" class="sign-up">Signup</a>
+            <span class="diamond">&#9670;</span>
+            <a href="#" class="login">Login</a>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html" class="footer-links"><span class="diamond">&#9670;</span>Home</a>
+            <a href="menu.html" class="footer-links"><span class="diamond">&#9670;</span>Menu</a>
+            <a href="contact.html" class="footer-links"><span class="diamond">&#9670;</span>Contact</a></div>
+    </footer>
+    
+    <script src="scripts/login.js"></script>
+    <script src="scripts/manager.js"></script>
+    
+</body>
+</html>

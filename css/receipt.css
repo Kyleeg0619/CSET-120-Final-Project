@@ -1,0 +1,203 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/*Color Palette */
+:root {
+  --brown-chocolate--: #620e2c;
+  --dark-chocolate--: #3f0a29;
+  --twilight-lavender--: #94426a;
+  --middle-purple--: #db90be;
+  --spanish-pink--: #f5bcc1;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/redsky.jpg");
+  background-size: 100vw 120vh;
+  color: var(--middle-purple--);
+}
+
+/* Receipt Styling */
+#receipt {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.receipt-container {
+    width: 70%;
+    max-width: 1080px;
+    margin: 0 auto;
+    background: var(--dark-chocolate--);
+    padding: 25px;
+    border: 1px solid var(--spanish-pink--);
+    border-radius: 15px;
+}
+
+.payments {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.payments label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.receipt-title {
+    color: var(--middle-purple--);
+}
+
+.info-bar {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--middle-purple--);
+}
+
+#orderNumber, #orderName, #orderDate, #paymentMethod {
+    margin: 5px;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  display: none;
+}
+
+#submitOrder {
+    display: none;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: var(--middle-purple--);
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--twilight-lavender--);
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: var(--middle-purple--);
+}
+
+.cart-item-title {
+  color: var(--middle-purple--);
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  display: none;
+}
+
+.cust-label, #customerName {
+    display: none;
+}
+
+.cart-quantity-input {
+    pointer-events: none;
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: none;
+  background: none;
+  color: var(--middle-purple--);
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid var(--twilight-lavender--);
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--middle-purple--);
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: var(--spanish-pink--);
+  font-size: 1.1em;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em .67em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--middle-purple--);
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: var(--twilight-lavender--);
+}
+
+@media screen and (max-width: 768px) {
+    .receipt-container {
+        width: 90%;
+    }
+}

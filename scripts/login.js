@@ -52,12 +52,12 @@ function check(event) {
 // for manager view log in with user = kylee and password = 333////
     if (userName === "kylee" && userPw === "333") {
         alert('You are logged in as a manager.');
-        window.location.href = '../manager.html'; // Redirect to manager's page
+        window.location.href = 'manager.html'; // Redirect to manager's page
     } else if (userName === storedName && userPw === storedPw) {
         alert('You are logged in as a customer.');
         if (storedRole === 'customer') {
             console.log(`User role: ${storedRole}`);
-            window.location.href = '../landing.html'; // Correct path to manager's page
+            window.location.href = 'landing.html'; // Correct path to manager's page
             console.log('Navigating to:', window.location.href);
         } else {
             alert('Error on login');

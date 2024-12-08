@@ -141,8 +141,8 @@ function calcCustomTotal() {
   //     ", "
   //   )}\nTotal Price: $${totalPrice.toFixed(2)}`
   // );
-  // addCustomToCart(selectedItems, totalPrice);
-  // updateCartTotal();
+  addCustomToCart(selectedItems, totalPrice);
+  updateCartTotal();
 }
 
 function addCustomToCart(title, price) {

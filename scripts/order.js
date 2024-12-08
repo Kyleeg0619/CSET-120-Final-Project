@@ -10,7 +10,7 @@ function ready() {
     .addEventListener("click", function (event) {
       event.preventDefault(); // Prevents the form from submitting
       storeCart();
-      window.location.href = "payment.html"; 
+      window.location.href = "payment.html";
     });
 
   var removeCartItemButtons = document.getElementsByClassName("btn-danger");
@@ -104,43 +104,48 @@ function calcCustomTotal() {
   const checkboxes = document.querySelectorAll("input[type='checkbox']");
   const basePrice = 5; // Starting base price
 
-    let totalPrice = basePrice;
-    let selectedItems = ["Base Price ($5.00)"];
+  let totalPrice = basePrice;
+  let selectedItems = ["Base Price ($5.00)"];
 
-    // Iterate through each checkbox
-    checkboxes.forEach((checkbox) => {
-      if (checkbox.checked) {
-        const price = parseFloat(checkbox.dataset.price || 0);
-        totalPrice += price;
+  // Iterate through each checkbox
+  checkboxes.forEach((checkbox) => {
+    if (checkbox.checked) {
+      const price = parseFloat(checkbox.dataset.price || 0);
+      totalPrice += price;
 
-        const listItem = checkbox.closest("li");
-        if (listItem) {
-          const label = listItem.querySelector("label");
-          const dropdown = listItem.querySelector("select");
+      const listItem = checkbox.closest("li");
+      if (listItem) {
+        const label = listItem.querySelector("label");
+        const dropdown = listItem.querySelector("select");
 
-          if (dropdown) {
-            // If a dropdown exists, add the selected dropdown option
-            const selectedOption = dropdown.options[dropdown.selectedIndex].text;
-            const dropdownPrice = parseFloat(dropdown.dataset.price || 0);
-            totalPrice += dropdownPrice;
-            selectedItems.push(`${selectedOption} (${dropdownPrice})`);
-          } else if (label) {
-            // If no dropdown but a label exists, add the label text
-            selectedItems.push(label.innerText.trim());
-          } else {
-            // If no dropdown or label, use the text content of the <li>
-            selectedItems.push(listItem.textContent.trim());
-          }
+        if (dropdown) {
+          // If a dropdown exists, add the selected dropdown option
+          const selectedOption = dropdown.options[dropdown.selectedIndex].text;
+          const dropdownPrice = parseFloat(dropdown.dataset.price || 0);
+          totalPrice += dropdownPrice;
+          selectedItems.push(`${selectedOption} (${dropdownPrice})`);
+        } else if (label) {
+          // If no dropdown but a label exists, add the label text
+          selectedItems.push(label.innerText.trim());
+        } else {
+          // If no dropdown or label, use the text content of the <li>
+          selectedItems.push(listItem.textContent.trim());
         }
       }
-    });
+    }
+  });
 
-    // Display the result
-    alert(`Your Custom Drink:\n${selectedItems.join(", ")}\nTotal Price: $${totalPrice.toFixed(2)}`);
-    addCustomToCart(selectedItems,totalPrice);
+  // Display the result
+  alert(
+    `Your Custom Drink:\n${selectedItems.join(
+      ", "
+    )}\nTotal Price: $${totalPrice.toFixed(2)}`
+  );
+  addCustomToCart(selectedItems, totalPrice);
+  updateCartTotal();
 }
 
-function addCustomToCart(title,price) {
+function addCustomToCart(title, price) {
   var cartRow = document.createElement("div");
   cartRow.classList.add("cart-row");
   var cartItems = document.getElementsByClassName("cart-items")[0];
@@ -156,7 +161,7 @@ function addCustomToCart(title,price) {
           <img class="cart-item-image" src="images/build-your-own-graphic.png" width="100" height="100">
           <span class="cart-item-title">${title}</span>
       </div>
-      <span class="cart-price cart-column">${price}</span>
+      <span class="cart-price cart-column">$${price}</span>
       <div class="cart-quantity cart-column">
           <input class="cart-quantity-input" type="number" value="1">
           <button class="btn btn-danger" type="button">REMOVE</button>
@@ -195,7 +200,7 @@ function storeCart() {
   let cart = document.getElementById("cart");
   let cartItems = cart.innerHTML;
 
-  let customerName = document.getElementById('customerName').value;
+  let customerName = document.getElementById("customerName").value;
 
   localStorage.setItem("orderName", customerName);
   localStorage.setItem("cartItems", cartItems);
@@ -205,27 +210,24 @@ function storeCart() {
 // Function to hide deleted items
 function hideDeletedItems() {
   const shopItems = document.querySelectorAll(".shop-item");
-  shopItems.forEach(item => {
-      const itemName = item.querySelector(".shop-item-title").innerText;
-      if (localStorage.getItem(`hide-${itemName}`) === "true") {
-          item.style.display = "none";
-      }
+  shopItems.forEach((item) => {
+    const itemName = item.querySelector(".shop-item-title").innerText;
+    if (localStorage.getItem(`hide-${itemName}`) === "true") {
+      item.style.display = "none";
+    }
   });
 }
-
-
-
 
 // Function to hide deleted items and show re-added items
 function updateOrderItems() {
   const shopItems = document.querySelectorAll(".shop-item");
-  shopItems.forEach(item => {
-      const itemName = item.querySelector(".shop-item-title").innerText;
-      if (localStorage.getItem(`hide-${itemName}`) === "true") {
-          item.style.display = "none"; // Hide deleted items
-      } else {
-          item.style.display = "block"; // Show re-added items
-      }
+  shopItems.forEach((item) => {
+    const itemName = item.querySelector(".shop-item-title").innerText;
+    if (localStorage.getItem(`hide-${itemName}`) === "true") {
+      item.style.display = "none"; // Hide deleted items
+    } else {
+      item.style.display = "block"; // Show re-added items
+    }
   });
 }
 
@@ -233,7 +235,6 @@ function updateOrderItems() {
 document.addEventListener("DOMContentLoaded", () => {
   updateOrderItems();
 });
-
 
 // Run the function on page load
 document.addEventListener("DOMContentLoaded", () => {

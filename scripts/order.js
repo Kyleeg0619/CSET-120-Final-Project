@@ -136,13 +136,13 @@ function calcCustomTotal() {
   });
 
   // Display the result
-  alert(
-    `Your Custom Drink:\n${selectedItems.join(
-      ", "
-    )}\nTotal Price: $${totalPrice.toFixed(2)}`
-  );
-  addCustomToCart(selectedItems, totalPrice);
-  updateCartTotal();
+  // alert(
+  //   `Your Custom Drink:\n${selectedItems.join(
+  //     ", "
+  //   )}\nTotal Price: $${totalPrice.toFixed(2)}`
+  // );
+  // addCustomToCart(selectedItems, totalPrice);
+  // updateCartTotal();
 }
 
 function addCustomToCart(title, price) {
@@ -158,7 +158,7 @@ function addCustomToCart(title, price) {
   }
   var cartRowContents = `
       <div class="cart-item cart-column">
-          <img class="cart-item-image" src="images/build-your-own-graphic.png" width="100" height="100">
+          <img class="cart-item-image" src="images/build-your-own-graphic.PNG" width="100" height="100">
           <span class="cart-item-title">${title}</span>
       </div>
       <span class="cart-price cart-column">$${price}</span>
